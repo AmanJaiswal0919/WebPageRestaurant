@@ -1,0 +1,342 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Best online food delivery service in india | myonlinemeal.com</title>
+     <link rel="stylesheet" href="/css/style13.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+</head>
+
+ <style>
+    
+    /* CSS Reset*/
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* CSS Variable*/
+    :root {
+        --navbar-height: 59px;
+    }
+
+    /*Navigation Bar*/
+    #navbar {
+        display: flex;
+        align-items: center;
+        position:relative;
+        top:0px;
+    }
+
+    #navbar::before {
+        content: "";
+        background-color: black;
+        position: absolute;
+        top:0px;
+        left:0px;
+       
+        height: 50%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.4;
+    }
+
+
+    /* Navigation bar:logo and image*/
+    #logo {
+        margin: 34px 45px;
+    }
+
+    #logo img {
+        height: 56px;
+        margin: auto;
+    }
+/*navigation bar styling*/
+
+
+    #navbar ul {
+        display: flex;
+        font-family: 'Bebas Neue', cursive;
+    }
+
+    #navbar ul li {
+        list-style: none;
+        font-size: 1.3rem;
+    }
+
+    #navbar ul li a {
+        color: white;
+        display: block;
+        padding: 3px 22px;
+        border-radius: 20px;
+        text-decoration: none;
+    }
+
+    #navbar ul li a:hover {
+        color: black;
+        background-color: white;
+    }
+
+    /*home section*/
+    #home {
+        display: flex;
+        flex-direction: column;
+        padding:3px 200px;
+        height: 300px;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    #home::before {
+        content: "";
+        background: url('image 5.jpg') no-repeat center center/cover;
+        position: absolute;
+        height: 70%;
+        width: 100%;
+        z-index: -1;
+        opacity: 3;
+         top:0px;
+        left:0px;
+
+    }
+
+    #home h1 {
+        color: white;
+        text-align: center;
+        font-family: 'Bebas Neue', cursive;
+    }
+
+    #home p {
+        color: white;
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: 'Bebas Neue', cursive;
+    }
+/*service section*/
+#service{
+    margin:60px;
+    display:flex;
+}
+#service .box{
+    border: 2px solid brown;
+    padding :34px;
+    margin:3px 6px;
+    border-radius: 28px;
+
+}
+#service .box img{
+    height: 120px;
+    margin: auto;
+    display:block;
+    padding:10px;
+    
+}
+#service.box p{
+    font-family: 'Bebas Neue', cursive;
+}
+/*client section*/
+#client-section{
+position:relative;
+height:344px;
+}
+#client-section::before{
+content: "";
+position: absolute;
+background: url('image 13.jpg') no-repeat center center/cover;
+
+width:100%;
+height: 54%;
+z-index: -1;
+opacity:4;
+}
+
+#clients{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 124px;
+}
+#client-item{
+    padding:34px;
+}
+/*contact session*/
+#contact{
+    position: relative;
+}
+#contact::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height:100%;
+    z-index:-1;
+    opacity:0.7;
+    background: url('image 13.jpg') no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width:40% ;
+}
+#contact-box label{
+ font-size: 1.3rem;
+ font-family: 'Bebas Neue', cursive;
+
+}
+footer{
+    background: black;
+    color:white;
+    padding: 9px 20px;
+    text-align: center;
+
+}
+    /*utility classes*/
+    .h-primary {
+        font-size: 3.8rem;
+        padding: 12px;
+        text-align: center;
+        font-family: 'Bebas Neue', cursive;
+
+    }
+    .h-secondary {
+        font-size: 2.3rem;
+        padding: 12px;
+        text-align: center;
+        font-family: 'Bebas Neue', cursive;
+
+    }
+    .btn {
+        padding: 6px 20px;
+        border: 2px solid white;
+        border-radius: 12px;
+        background-color: brown;
+        color: white;
+        margin: 17px;
+        font-size: 1.5rem;
+    }
+    /*service section*/
+</style> 
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo 2.jpg" alt="MyOnlineMeal.com">
+        </div>
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">Service</a></li>
+            <li class="item"><a href="#">About Us</a></li>
+            <li class="item"><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">welcome to my online meal</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti maior
+            provident est laboriosam aliquid impedit</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolore</p>
+        <button class="btn">order now</button>
+    </section>
+    <section class="services-container">
+        <h1 class="h-primary center">our service</h1>
+        <div id="service">
+            <div class="box">
+                <img src="image 10.webp" alt="">
+                <h2 class="h-secondary center">food catering</h2>
+                <p class="center">Lorem,unde? Molestiae necessitatibus, velit modi isillum animi, beatae cupiditate
+                    iure natus odit alias accusamus. Vel, dolorem.</p>
+            </div>
+           <div class="box">
+                <img src="image 4.jpg" alt="">
+                <h2 class="h-secondary center">bulk ordering</h2>
+                <p class="center">Lorem,unde? Molestiae necessitatibus, velit modi isillum animi, beatae cupiditate
+                    iure natus odit alias accusamus. Vel, dolorem.</p>
+            </div>
+            <div class="box">
+                <img src="image 6.jpg" alt="">
+                <h2 class="h-secondary center">food ordering</h2>
+                <p class="center">Lorem,unde? Molestiae necessitatibus, velit modi isillum animi, beatae cupiditate
+                    iure natus odit alias accusamus. Vel, dolorem.</p>
+            </div>
+        </div>
+    </section>
+    <section id="client section">
+    <h1 class="h-primary center">Our Clients</h1>
+    <div id="clients">
+<div class="client-item">
+    <img src="image 7.jpg" alt="our client">
+</div>
+<div class="client-item">
+    <img src="image 8.jpg" alt="our client">
+</div>
+<div class="client-item">
+    <img src="image 12.jpg" alt="our client">
+</div>
+<div class="client-item">
+    <img src="image 9.jpg" alt="our client">
+</div>
+<div class="client-item">
+    <img src="image 11.jpg" alt="our client">
+</div>
+    </div>
+</section>
+<section id="contact">
+    <h1 class="h-primary center">Contact Us</h1>
+    <div id="contact-box">
+        <form action="">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input types="text" name="name" id="name" placeholder="Enter your name">
+
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input types="text" name="name" id="email" placeholder="Enter your email">
+
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone number:</label>
+                <input types="text" name="name" id="phone" placeholder="Enter your phone no">
+
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea types="text" name="name" id="message" cols="30" rows="10"></textarea>
+
+            </div>
+
+        </form>
+    </div>
+</section>
+<footer>
+    <div class="center">
+        copyright &copy; www.myonlinemeal.com.All rights reserved!
+    </div>
+</footer>
+</body>
+
+</html> 
+
+
+
+
+
+
+
+ 
